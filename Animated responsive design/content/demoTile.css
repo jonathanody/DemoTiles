@@ -1,0 +1,28 @@
+#tileContainer {
+    margin: 5px;
+    min-width: 320px;
+}
+
+.tile {
+    transition: .75s transform;
+}
+
+.tile:hover {
+    outline: none;
+    transform: perspective(300px) rotateY(-5deg) rotateX(5deg);
+}
+
+.tile-wide:hover, .tile-large:hover {
+    transform: perspective(600px) rotateY(-5deg) rotateX(5deg);
+}
+
+.cloudsBackground {
+    background: url(../images/clouds2.png) top left no-repeat; 
+    background-size: cover;
+}
+
+@media screen and (min-width: 1px) {
+  html {
+    font-size: 100%
+  }
+}
